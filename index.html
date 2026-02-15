@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Tokgöz Kasap & Şarküteri</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokgöz Kasap & Şarküteri</title>
     <style>
         body {
             margin: 0;
@@ -12,7 +13,7 @@
         header {
             background: #111;
             color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
         }
 
@@ -24,17 +25,50 @@
 
         nav a {
             color: white;
-            margin: 15px;
+            margin: 10px;
             text-decoration: none;
             font-weight: bold;
         }
 
+        /* HERO */
         .hero {
-            background: url('https://images.unsplash.com/photo-1690983325551-b922137727be?q=80&w=864&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
             background-size: cover;
             color: white;
-            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
             text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .hero a {
+            background: #c0392b;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .hero a.konum {
+            background: #111;
         }
 
         .products {
@@ -57,6 +91,27 @@
             text-align: center;
         }
 
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 300px;
+        }
+
+        .instagram-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #E1306C;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .instagram-btn:hover {
+            opacity: 0.8;
+        }
+
         footer {
             background: #111;
             color: white;
@@ -75,6 +130,7 @@
             text-decoration: none;
             font-size: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -82,38 +138,23 @@
 <header>
     <h1>Tokgöz Kasap & Şarküteri</h1>
 </header>
-<section style="https://images.unsplash.com/photo-1690983325551-b922137727be?q=80&w=864&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 
-    <h1 style="font-size:48px; margin-bottom:20px;">
-        Tokgöz Kasap & Şarküteri
-    </h1>
-
-    <p style="font-size:22px; margin-bottom:30px;">
-        Taze et ürünleri ve kaliteli şarküteri çeşitleri ile hizmetinizdeyiz
-    </p>
-
-    <a href="tel:905409672961" 
-       style="background:#c0392b; color:white; padding:15px 30px; text-decoration:none; border-radius:8px; margin:10px; display:inline-block; font-weight:bold;">
-       📞 Hemen Ara
-    </a>
-
-    <a href="#iletisim" 
-       style="background:#111; color:white; padding:15px 30px; text-decoration:none; border-radius:8px; margin:10px; display:inline-block; font-weight:bold;">
-       📍 Konum
-    </a>
-
-</section>
 <nav>
     <a href="#">Anasayfa</a>
     <a href="#urunler">Ürünler</a>
     <a href="#iletisim">İletişim</a>
 </nav>
 
+<!-- ANASAYFA HERO -->
 <section class="hero">
-    <h2>Taze ve Kaliteli Et Ürünleri</h2>
-    <p>Günlük kesim, güvenilir hizmet</p>
+    <h1>Tokgöz Kasap & Şarküteri</h1>
+    <p>Taze et ürünleri ve kaliteli şarküteri çeşitleri ile hizmetinizdeyiz</p>
+
+    <a href="tel:905409672961">📞 Hemen Ara</a>
+    <a href="#iletisim" class="konum">📍 Konum</a>
 </section>
 
+<!-- ÜRÜNLER -->
 <section class="products" id="urunler">
     <h2>Ürünlerimiz</h2>
 
@@ -133,15 +174,25 @@
     </div>
 </section>
 
+<!-- İLETİŞİM -->
 <section class="contact" id="iletisim">
     <h2>İletişim</h2>
-    <p>📍 Adres: Arapçeşme Mah. Şehit Mülazim Karatay Cad NO:22 Gebze/Kocaeli</p>
-    <p>📞 Telefon: <a href="tel:905409672961">0540 967 2961 </a> </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.791016798889!2d29.443942074537993!3d40.81058593157671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb211c6c11f133%3A0x3dda2a0e0ee3bf17!2zVE9LR8OWWiBLQVNBUCDCrg!5e0!3m2!1str!2str!4v1771181760297!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p>📍 Adres: Arapçeşme Mah. Şehit Mülazim Karatay Cad. No:22 GEBZE/Kocaeli</p>
+
+    <p>📞 Telefon: 
+        <a href="tel:905409672961">0540 967 2961</a>
+    </p>
+
+    <iframe src="https://maps.app.goo.gl/tLmSNFjQc8pwB4Uw7" allowfullscreen="" loading="lazy"></iframe>
+
+    <br>
+
+    <a href="https://instagram.com/tokgozkasap" class="instagram-btn" target="_blank">📸 Instagram'da Bizi Takip Et</a>
 </section>
 
 <footer>
-    © 2026 Tokgöz Kasap - Tüm Hakları Saklıdır
+    © 2026 Tokgöz Kasap & Şarküteri - Tüm Hakları Saklıdır
 </footer>
 
 <a href="https://wa.me/905409672961" class="whatsapp">📱</a>
