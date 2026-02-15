@@ -1,16 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Benim İlk Sitem</title>
+    <title>Tokgöz Kasap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #c0392b;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1604908554027-6f60e0dc4c33') no-repeat center;
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .products {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .product-card {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .contact {
+            background: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
 </head>
-<body style="text-align:center; font-family:Arial; background-color:#f2f2f2;">
+<body>
 
-    <h1>Merhaba Dünya 🚀</h1>
-    <p>Bu benim GitHub ile yaptığım ilk web sitem!</p>
+<header>
+    <h1>Tokgöz Kasap</h1>
+</header>
 
-    <button onclick="alert('Tebrikler! İlk siteni yaptın 🎉')">
-        Bana Tıkla
-    </button>
+<nav>
+    <a href="#">Anasayfa</a>
+    <a href="#urunler">Ürünler</a>
+    <a href="#iletisim">İletişim</a>
+</nav>
+
+<section class="hero">
+    <h2>Taze ve Kaliteli Et Ürünleri</h2>
+    <p>Günlük kesim, güvenilir hizmet</p>
+</section>
+
+<section class="products" id="urunler">
+    <h2>Ürünlerimiz</h2>
+
+    <div class="product-card">
+        <h3>Kıyma</h3>
+        <p>Günlük çekim dana kıyma</p>
+    </div>
+
+    <div class="product-card">
+        <h3>Kușbaşı</h3>
+        <p>Taze ve yumuşak dana kuşbaşı</p>
+    </div>
+
+    <div class="product-card">
+        <h3>Sucuk</h3>
+        <p>Özel baharatlı ev yapımı sucuk</p>
+    </div>
+</section>
+
+<section class="contact" id="iletisim">
+    <h2>İletişim</h2>
+    <p>📍 Adres: (Adresinizi yazın)</p>
+    <p>📞 Telefon: (Telefon numaranızı yazın)</p>
+</section>
+
+<footer>
+    © 2026 Tokgöz Kasap - Tüm Hakları Saklıdır
+</footer>
+
+<a href="https://wa.me/905409672961" class="whatsapp">📱</a>
 
 </body>
 </html>
