@@ -46,31 +46,36 @@
         }
 
         .hero h1 {
-            font-size: 48px;
+            font-size: 56px;
+            font-weight: bold;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
         }
 
         .hero p {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 30px;
             max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
         }
 
         .hero a {
             background: #c0392b;
             color: white;
-            padding: 15px 30px;
+            padding: 18px 35px;
             text-decoration: none;
             border-radius: 8px;
             margin: 10px;
             font-weight: bold;
             display: inline-block;
+            font-size: 18px;
         }
 
         .hero a.konum {
             background: #111;
         }
 
+        /* ÜRÜNLER */
         .products {
             padding: 40px;
             text-align: center;
@@ -81,8 +86,11 @@
             width: 250px;
             margin: 20px;
             padding: 20px;
-            border: 1px solid #ddd;
             border-radius: 10px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+            background-size: cover;
+            background-position: center;
         }
 
         .contact {
@@ -130,7 +138,6 @@
             text-decoration: none;
             font-size: 20px;
         }
-
     </style>
 </head>
 <body>
@@ -145,7 +152,7 @@
     <a href="#iletisim">İletişim</a>
 </nav>
 
-<!-- ANASAYFA HERO -->
+<!-- HERO -->
 <section class="hero">
     <h1>Tokgöz Kasap & Şarküteri</h1>
     <p>Taze Et Ürünleri Ve Kaliteli Şarküteri Çeşitleri İle Hizmetinizdeyiz</p>
@@ -158,41 +165,33 @@
 <section class="products" id="urunler">
     <h2>Ürünlerimiz</h2>
 
-    <div class="product-card">
-        <h3>Kıyma</h3>
-        <p>Günlük Çekim Dana Kıyma</p>
+    <!-- Kuşbaşı kartı -->
+    <div class="product-card" style="
+        background: url('https://images.unsplash.com/photo-1598514982919-dc92f05a924d?auto=format&fit=crop&w=400&q=80') no-repeat center center;">
+        <h3 style="font-size:20px; font-weight:bold;">Kuşbaşı</h3>
+        <p style="font-size:16px;">Dana Kuşbaşı Et</p>
     </div>
-<div class="product-card" style="
-    background: url('https://images.unsplash.com/photo-1598514982919-dc92f05a924d?auto=format&fit=crop&w=400&q=80') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    margin: 20px;
-">
-    <h3 style="font-size:20px; font-weight:bold;">Kuşbaşı</h3>
-    <p style="font-size:16px;">Dana kuşbaşı et</p>
-</div>
 
-    <div class="product-card">
-        <h3>Sucuk</h3>
-        <p>Özel Baharatlı Ev Yapımı Sucuk</p>
+    <!-- Kıyma kartı örnek -->
+    <div class="product-card" style="
+        background: url('https://images.unsplash.com/photo-1589927986089-35812388d1be?auto=format&fit=crop&w=400&q=80') no-repeat center center;">
+        <h3 style="font-size:20px; font-weight:bold;">Kıyma</h3>
+        <p style="font-size:16px;">Günlük Çekim Dana Kıyma</p>
     </div>
+
 </section>
 
 <!-- İLETİŞİM -->
 <section class="contact" id="iletisim">
     <h2>İletişim</h2>
 
-    <p>📍 Adres: Arapçeşme Mah. Şehit Mülazim Karatay Cad. No:22 GEBZE/Kocaeli</p>
+    <p>📍 Adres: Arapçeşme Mah. Şehit Mülazim Karatay Cad. No:22 Kocaeli/GEBZE</p>
 
     <p>📞 Telefon: 
         <a href="tel:905409672961">0540 967 2961</a>
     </p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.791016798889!2d29.443942074537993!3d40.81058593157671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb211c6c11f133%3A0x3dda2a0e0ee3bf17!2zVE9LR8OWWiBLQVNBUCDCrg!5e0!3m2!1str!2str!4v1771187293040!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.791016798889!2d29.443942074537993!3d40.81058593157671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb211c6c11f133%3A0x3dda2a0e0ee3bf17!2zVE9LR8OWWiBLQVNBUCDCrg!5e0!3m2!1str!2str!4v1771191150468!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <br>
 
