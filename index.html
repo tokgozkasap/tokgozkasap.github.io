@@ -17,17 +17,42 @@
             text-align: center;
         }
 
+        /* MENÜ */
         nav {
             background: #c0392b;
             padding: 10px;
             text-align: center;
+            position: relative;
         }
 
         nav a {
             color: white;
-            margin: 10px;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #c0392b;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         /* HERO */
@@ -93,6 +118,7 @@
             background-position: center;
         }
 
+        /* İLETİŞİM */
         .contact {
             background: #f4f4f4;
             padding: 40px;
@@ -138,6 +164,7 @@
             text-decoration: none;
             font-size: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -146,9 +173,17 @@
     <h1>Tokgöz Kasap & Şarküteri</h1>
 </header>
 
+<!-- MENÜ -->
 <nav>
     <a href="#">Anasayfa</a>
-    <a href="#urunler">Ürünler</a>
+    <div class="dropdown">
+        <a href="#">Ürünler</a>
+        <div class="dropdown-content">
+            <a href="#dana">Dana</a>
+            <a href="#kuzu">Kuzu</a>
+            <a href="#sut">Süt Ürünleri</a>
+        </div>
+    </div>
     <a href="#iletisim">İletişim</a>
 </nav>
 
@@ -163,16 +198,45 @@
 
 <!-- ÜRÜNLER -->
 <section class="products">
-    <h2>Dana Ürünleri</h2>
-    <div class="product-card">...</div> <!-- Kuşbaşı -->
-    <div class="product-card">...</div> <!-- Kıyma -->
-    <div class="product-card">...</div> <!-- Biftek -->
 
-    <h2>Kuzu Ürünleri</h2>
-    <div class="product-card">...</div> <!-- Kuzu Kuşbaşı -->
-    <div class="product-card">...</div> <!-- Kuzu Pirzola -->
-    </div>
-                
+    <!-- DANA -->
+    <section id="dana">
+        <h2>Dana Ürünleri</h2>
+        <div class="product-card" style="background: url('https://media.istockphoto.com/id/643369868/photo/beef-meat-cubes-with-rosemary-herb-and-garlic.webp?a=1&b=1&s=612x612&w=0&k=20&c=VfzdJUPKtjBprcovJG6S9A5P8RwrrVlN_i67IUz3j74=') no-repeat center center;">
+            <h3>Kuşbaşı</h3>
+            <p>Dana kuşbaşı et</p>
+        </div>
+        <div class="product-card" style="background: url('https://media.istockphoto.com/id/1341859890/photo/extra-lean-ground-beef.webp?a=1&b=1&s=612x612&w=0&k=20&c=h3XUnF0x97YP8uQc33K67IjeTVjK477VJvLihW8dzFY=') no-repeat center center;">
+            <h3>Kıyma</h3>
+            <p>Günlük çekim dana kıyma</p>
+        </div>
+    </section>
+
+    <!-- KUZU -->
+    <section id="kuzu">
+        <h2>Kuzu Ürünleri</h2>
+        <div class="product-card" style="background: url('https://media.istockphoto.com/id/530566602/photo/heap-of-raw-meat-cuts.webp?a=1&b=1&s=612x612&w=0&k=20&c=RDWep5ErcB_2hcrqC_QaGLp8xpKlUp28vROPr6kWHIw=') no-repeat center center;">
+            <h3>Kuzu Kuşbaşı</h3>
+            <p>Lezzetli Kuzu Kuşbaşı</p>
+        </div>
+        <div class="product-card" style="background: url('https://media.istockphoto.com/id/2172711358/photo/raw-lamb-chops.webp?a=1&b=1&s=612x612&w=0&k=20&c=UviSUZUvn98lNFtOfrel9XMI44CaekqzeBhe_NdRIfE=') no-repeat center center;">
+            <h3>Kuzu Pirzola</h3>
+            <p>Özel Kuzu Pirzola</p>
+        </div>
+    </section>
+
+    <!-- SÜT ÜRÜNLERİ -->
+    <section id="SÜt">
+        <h2>Süt Ürünleri</h2>
+        <div class="product-card" style="background: url('https://media.istockphoto.com/id/1385451789/photo/organic-butter.webp?a=1&b=1&s=612x612&w=0&k=20&c=va6YNcQeVN1v4k7LmeUM22p8k8ABtRqu8ulmNRLQ5ac=') no-repeat center center;">
+            <h3>Tereyağı</h3>
+            <p>Trabzon Yayık Tereyağı</p>
+        </div>
+        <div class="product-card" style="background: url('https://media.istockphoto.com/id/2193283106/photo/grated-cheese.webp?a=1&b=1&s=612x612&w=0&k=20&c=bLbAG7RSU0EJ2aE6lgj-fJDaVWmP3nxvmPuwa7UBFoM=') no-repeat center center;">
+            <h3>Tel Peynir</h3>
+            <p>Doğal Tel Peynir Çeşitleri</p>
+        </div>
+    </section>
 
 </section>
 
@@ -186,7 +250,7 @@
         <a href="tel:905409672961">0540 967 2961</a>
     </p>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.791016798889!2d29.443942074537993!3d40.81058593157671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb211c6c11f133%3A0x3dda2a0e0ee3bf17!2zVE9LR8OWWiBLQVNBUCDCrg!5e0!3m2!1str!2str!4v1771191150468!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092266.189086635!2d24.832259187499993!3d40.81058189999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb211c6c11f133%3A0x3dda2a0e0ee3bf17!2zVE9LR8OWWiBLQVNBUCDCrg!5e0!3m2!1str!2str!4v1771247571229!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
 
     <br>
 
